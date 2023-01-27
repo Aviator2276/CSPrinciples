@@ -1,7 +1,7 @@
 # Import the time library to make the program sleep 1 second
 import time
 
-# INPUT 
+# INPUT - START
 # Ask the user to set the timer to both minutes and seconds
 setTime = input("What do you want to set the timer to? (minutes:seconds - ##:##) ")
 
@@ -21,7 +21,7 @@ seconds = int(seconds)
 timer = (minutes * 60) + seconds
 
 # LOOP - ITERATION
-# These while loop is the main part of the actual timer. The while loop only ends once the timer has reached 0 (loops the timer when not 0)
+# This while loop is the main part of the actual timer. The while loop only ends once the timer has reached 0 (loops the timer when not 0)
 while timer != 0:
     # These add zeros before the numbers just to make the design consistant
     addZeroSec = ''
@@ -38,13 +38,13 @@ while timer != 0:
         addZeroMin = 0
     elif timerMin == 0:
         addZeroMin = 0
-    # This actually prints the time out while it is counting down
+    # This actually prints the time, while it is counting down
     print(str(addZeroMin) + str(timerMin) + ":" + str(addZeroSec) + str(timerSec))
     # This is the actual code that waits 1 second before proceeding
     time.sleep(1)
-    # Making sure the timer goes does after waiting 1 second
+    # Making sure the timer goes after waiting 1 second
     timer -= 1
 
-# END
+# OUTPUT - END
 # Tells the user it is done when completed
 print("Done!!!")
