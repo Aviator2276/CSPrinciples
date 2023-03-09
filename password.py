@@ -3,7 +3,7 @@
 # Here we are getting input from the user and assigning them to their
 # respective variables
 website = input(str("What website will you be using this password for? "))
-abbr = input(str("What is a two letter abbreviation for this website? "))
+abbr = input(str("What is a two-letter abbreviation for this website? "))
 verb = input(str("What is a verb that describes how you use this website? "))
 content = input(str("What content is on this website? "))
 
@@ -39,5 +39,5 @@ for i in verb:
     
 #OUTPUT
 # Finally we mash everything into a password
-print(abbr + str(length) + changeVerb + content)
+print("Here's your password!\n" + abbr + str(length) + changeVerb + content)
 #END
