@@ -52,3 +52,8 @@ for x in suit:
 # Once all is done, print out the converted card in binary code
 print(str(rankBinary)+str(suitBinary)+str(cardColor))
 # END
+
+# ---------- DISCUSSION ----------
+# I chose variable length as it was easier to set up and had predictable patterns.
+# Fixed length can be less compressed than variable encoding although variable
+# encoding can introduce errors and complexity.
